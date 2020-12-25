@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12.x
+  pre_build:
+    commands:
+      - echo installing dependencies
+      - npm i
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building the react app
+      - REACT_APP_BASE_URL=https://api.streamblast.com REACT_APP_MQTT_HOST_1=b-1a35df01-4ed6-4be4-a96e-4d1bdf9b57db-1.mq.eu-central-1.amazonaws.com REACT_APP_MQTT_HOST_2=b-1a35df01-4ed6-4be4-a96e-4d1bdf9b57db-2.mq.eu-central-1.amazonaws.com REACT_APP_MQTT_PORT=61619 REACT_APP_MQTT_USERNAME=streamblast-consumer REACT_APP_MQTT_PASSWORD=nmpgnjbH5b8eHxAJ REACT_APP_FB_API_KEY=AIzaSyBbujYUogLhN-y6ddoTq9zaGpn47DjDBSc REACT_APP_FB_APPID=1:771956970437:web:24b34930f7497c13cc71ac REACT_APP_FB_DOMAIN=streamblast-dfe52 REACT_APP_FB_MSG_SENDERID=771956970437 REACT_APP_FB_MEASUREMENTID=G-Z5XPK8QW7T npm run build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo generating artifacts
+artifacts:
+    files: '**/*'
+    base-directory: 'build'

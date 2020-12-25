@@ -1,0 +1,191 @@
+{
+  "name": "streamblast",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "@date-io/moment": "^1.1.0",
+    "@types/braintree-web": "^3.62.2",
+    "@types/node": "11.13.7",
+    "@types/react": "16.8.14",
+    "@types/react-dom": "16.8.4",
+    "@types/react-facebook-login": "^4.1.2",
+    "@types/react-paginate": "^6.2.1",
+    "@types/react-swipe": "^6.0.0",
+    "@types/react-tooltip": "^3.11.0",
+    "@types/uuid": "^8.3.0",
+    "animate.css": "^4.1.1",
+    "animated-number-react": "^0.1.1",
+    "aws-sdk": "^2.610.0",
+    "axios": "^0.18.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "braintree-web": "^3.68.0",
+    "can-use-dom": "^0.1.0",
+    "cross-env": "^5.2.0",
+    "crypto-js": "^3.1.9-1",
+    "downshift": "^3.1.5",
+    "eventemitter3": "^4.0.7",
+    "firebase": "^8.0.0",
+    "formik": "^1.5.4",
+    "history": "^4.7.2",
+    "i18next": "^19.7.0",
+    "install": "^0.10.1",
+    "jss-rtl": "^0.2.3",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "mqtt": "^4.2.1",
+    "node-sass": "^4.14.1",
+    "node_env": "^0.0.3",
+    "query-string": "^6.10.1",
+    "react": "^16.8.6",
+    "react-countdown": "^2.2.1",
+    "react-dom": "^16.8.6",
+    "react-flip-move": "^3.0.4",
+    "react-i18next": "^11.7.1",
+    "react-joyride": "^2.2.1",
+    "react-player": "^2.6.2",
+    "react-redux": "^6.0.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "5.1.0",
+    "react-scripts": "^3.4.3",
+    "react-slick": "^0.27.11",
+    "react-toastify": "^5.5.0",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^6.3.3",
+    "twitch": "^4.2.2",
+    "typescript": "3.4.5",
+    "url-search-params": "^1.1.0",
+    "uuid": "^8.3.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.{ts,tsx}"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/crypto-js": "^3.1.43",
+    "@types/lodash": "^4.14.125",
+    "@types/moment": "^2.13.0",
+    "@types/paho-mqtt": "^1.0.4",
+    "@types/query-string": "^6.3.0",
+    "@types/react-image-magnifiers": "^1.3.0",
+    "@types/react-redux": "^7.0.8",
+    "@types/react-router-dom": "^4.3.2",
+    "@types/react-select": "^3.0.10",
+    "@types/react-slick": "^0.23.4",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "@types/yup": "^0.26.12",
+    "eslint-plugin-react": "^7.13.0",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "mrm": "^1.2.1",
+    "node-sass": "^4.9.3",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-standard": "^8.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:react/recommended"
+    ],
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/prop-types": [
+        0
+      ],
+      "react-hooks/exhaustive-deps": [
+        0
+      ],
+      "react/no-redundant-should-component-update": [
+        2
+      ],
+      "react/no-typos": [
+        2
+      ],
+      "react/no-this-in-sfc": [
+        2
+      ],
+      "react/no-unescaped-entities": [
+        2
+      ],
+      "react/no-unknown-property": [
+        2
+      ],
+      "react/no-unsafe": [
+        2
+      ],
+      "react/no-unused-state": [
+        2
+      ],
+      "react/no-will-update-set-state": [
+        2
+      ],
+      "react/prefer-stateless-function": [
+        1
+      ],
+      "react/self-closing-comp": [
+        1
+      ],
+      "react/jsx-no-bind": [
+        1
+      ],
+      "react/jsx-fragments": [
+        1,
+        "syntax"
+      ],
+      "react/jsx-pascal-case": [
+        2
+      ],
+      "react/sort-comp": [
+        2,
+        {
+          "order": [
+            "instance-variables",
+            "static-methods",
+            "lifecycle",
+            "render",
+            "everything-else"
+          ],
+          "groups": {
+            "instance-variables": [
+              "state"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

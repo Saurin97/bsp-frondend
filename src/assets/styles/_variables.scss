@@ -1,0 +1,60 @@
+//Color Variables
+$red-color: #fe4755;
+
+//Black color shades
+$black-color: #020E13;
+$pure-black-color: #000000;
+
+//primary colors
+$primary-color: #0c2936;
+$secondary-color : #F4F4F4;
+
+//White Color Shades
+$white-color: #ffffff;
+
+//Font family
+$font: 'SourceSansPro',
+sans-serif;
+
+//Font Weight Variables
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+$font-heavy: 800;
+
+//latter Spacing variables
+$letter-spacing-base: 0.5px !default;
+$letter-spacing-lg: 2px !default;
+$letter-spacing-xl: 4px !default;
+
+//Line Height variables
+$line-height-default: 1.5;
+
+//Font size variables
+$font-size-xs: 0.8125rem;
+$font-size-sm: 0.875rem;
+$font-size-default: 0.9375rem; // 0.9375rem = 15px
+$font-size-browser-default: 1rem;
+$font-size-md: 1.0625rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.5rem;
+
+//Width and height variables
+$full-width: 100%;
+$full-height: 100%;
+$full-viewport-width: 100vw;
+$full-viewport-height: 100vh;
+
+//Container width variables
+$container-default-width: 80%;
+$container-full-width: $full-width;
+$container-max-width: 1450px;
+
+//Border radius width variables
+$border-radius-default: 5px;
+$border-radius-sm: 2px;
+$border-radius-md: 8px;
+$border-radius-lg: 10px;
+$game-card-radius: 20px;
+$border-radius-circle: 50%;

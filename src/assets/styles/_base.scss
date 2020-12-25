@@ -1,0 +1,119 @@
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+* {
+	font-family: $font;
+}
+
+
+body {
+	@include margin(0);
+	@include padding(0);
+	background-color: $black-color;
+	font-size: $font-size-browser-default;
+	font-weight: $font-regular;
+	color: $white-color;
+	letter-spacing: 0.3px;
+	scroll-behavior: smooth;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 5px;
+		box-shadow: inset 0 0 4px -0.5px rgba(0, 0, 0, 0.2);
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: rgba($color: $white-color, $alpha: 0.5);
+	}
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	@include padding(0);
+}
+
+ul {
+	list-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	@include margin(0);
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+textarea {
+	resize: vertical;
+
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 5px;
+		box-shadow: inset 0 0 4px -0.5px rgba(0, 0, 0, 0.2);
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		background-color: rgba($color: $white-color, $alpha: 0.5);
+	}
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+	outline: 0;
+}
+
+input {
+	-webkit-appearance: none;
+}
+
+select {
+	@include paddingLeft(8px);
+	background-color: $white-color;
+	border-radius: $border-radius-default;
+	outline: none;
+	cursor: pointer;
+
+	&:-moz-focusring {
+		color: transparent;
+		text-shadow: 0 0 0 #000;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+		background-color: #f2f2f2;
+	}
+}
+
+select.decorated option:hover {
+	box-shadow: 0 0 10px 100px #1882A8 inset;
+}
